@@ -1,0 +1,21 @@
+0000000000000000000000000000000000000000 3e1bcfa6b2edcb28f7f8f69cd4962629f62f0d1c tuongnguyen <tuongnguyendev@gmail.com> 1582846872 +0700	clone: from git@gitlab.com:osteam_product/upload_saas_resumebuilder.git
+3e1bcfa6b2edcb28f7f8f69cd4962629f62f0d1c 66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 tuongnguyen <tuongnguyendev@gmail.com> 1582850025 +0700	commit: add privacy and terms
+66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 tuongnguyen <tuongnguyendev@gmail.com> 1583815097 +0700	checkout: moving from master to sergio_morales
+66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 tuongnguyen <tuongnguyendev@gmail.com> 1583815134 +0700	checkout: moving from sergio_morales to master
+66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 tuongnguyen <tuongnguyendev@gmail.com> 1583815193 +0700	checkout: moving from master to sergio_morales
+66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 438592a08dc8fa7a47a4b5ac5520537447912e87 tuongnguyen <tuongnguyendev@gmail.com> 1583815952 +0700	commit: version 2: add fonts and change template
+438592a08dc8fa7a47a4b5ac5520537447912e87 d8b0afabaf8543fe5ca25ab2a34f5dac39a27385 tuongnguyen <tuongnguyendev@gmail.com> 1583853885 +0700	commit: add new template and export PDF with template free
+d8b0afabaf8543fe5ca25ab2a34f5dac39a27385 3bce491316e8f24dfcc821a845c7706c4e75c56d tuongnguyen <tuongnguyendev@gmail.com> 1583855103 +0700	commit: change fix bug and image index
+3bce491316e8f24dfcc821a845c7706c4e75c56d 69814dee4548ea964411ac97b7ef897dc69fd86e tuongnguyen <tuongnguyendev@gmail.com> 1583987063 +0700	commit: change all template desgin
+69814dee4548ea964411ac97b7ef897dc69fd86e 3614edade24e0cb689acec266776b0c7d7a0d28e tuongnguyen <tuongnguyendev@gmail.com> 1584171298 +0700	commit: fix bug edit resume config type
+3614edade24e0cb689acec266776b0c7d7a0d28e 66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 tuongnguyen <tuongnguyendev@gmail.com> 1584171302 +0700	checkout: moving from sergio_morales to master
+66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 3614edade24e0cb689acec266776b0c7d7a0d28e tuongnguyen <tuongnguyendev@gmail.com> 1584171638 +0700	checkout: moving from master to sergio_morales
+3614edade24e0cb689acec266776b0c7d7a0d28e 66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 tuongnguyen <tuongnguyendev@gmail.com> 1584171657 +0700	checkout: moving from sergio_morales to master
+66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 3614edade24e0cb689acec266776b0c7d7a0d28e tuongnguyen <tuongnguyendev@gmail.com> 1584172753 +0700	checkout: moving from master to sergio_morales
+3614edade24e0cb689acec266776b0c7d7a0d28e 66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 tuongnguyen <tuongnguyendev@gmail.com> 1584172798 +0700	checkout: moving from sergio_morales to master
+66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 67b1edce535b92339a6129be0bc97c8c2d4cbded tuongnguyen <tuongnguyendev@gmail.com> 1584173129 +0700	commit: add new cv column and add font default roboto
+67b1edce535b92339a6129be0bc97c8c2d4cbded a7698eb8f2883226a391741fd34870686b17745f tuongnguyen <tuongnguyendev@gmail.com> 1584173286 +0700	commit: change thumbnail cv
+a7698eb8f2883226a391741fd34870686b17745f c2e7ef0385d849b40298c2f518cea3dd0a2e9ab0 tuongnguyen <tuongnguyendev@gmail.com> 1584175536 +0700	commit: add button undo and redo
+c2e7ef0385d849b40298c2f518cea3dd0a2e9ab0 692aacb563bf210f491956ba2a3a0a830a68747f Tuong Nguyen <tuongnguyendev@gmail.com> 1596591592 +0700	commit: complete version 2 add new feature CRUD template
+692aacb563bf210f491956ba2a3a0a830a68747f 25736732a6f90fbadb505e670049d91af6028bc6 Tuong Nguyen <tuongnguyendev@gmail.com> 1596591623 +0700	pull: Merge made by the 'recursive' strategy.
+25736732a6f90fbadb505e670049d91af6028bc6 988b722361666812ae930695e027208dc1e7ed85 Tuong Nguyen <tuongnguyendev@gmail.com> 1596593077 +0700	commit: add update DB

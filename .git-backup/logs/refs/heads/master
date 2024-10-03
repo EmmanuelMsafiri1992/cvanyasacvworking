@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 3e1bcfa6b2edcb28f7f8f69cd4962629f62f0d1c tuongnguyen <tuongnguyendev@gmail.com> 1582846872 +0700	clone: from git@gitlab.com:osteam_product/upload_saas_resumebuilder.git
+3e1bcfa6b2edcb28f7f8f69cd4962629f62f0d1c 66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 tuongnguyen <tuongnguyendev@gmail.com> 1582850025 +0700	commit: add privacy and terms
+66d8575ac39b3d7b36519c9bdb0a5abb5a5ceae6 67b1edce535b92339a6129be0bc97c8c2d4cbded tuongnguyen <tuongnguyendev@gmail.com> 1584173129 +0700	commit: add new cv column and add font default roboto
+67b1edce535b92339a6129be0bc97c8c2d4cbded a7698eb8f2883226a391741fd34870686b17745f tuongnguyen <tuongnguyendev@gmail.com> 1584173286 +0700	commit: change thumbnail cv
+a7698eb8f2883226a391741fd34870686b17745f c2e7ef0385d849b40298c2f518cea3dd0a2e9ab0 tuongnguyen <tuongnguyendev@gmail.com> 1584175536 +0700	commit: add button undo and redo
+c2e7ef0385d849b40298c2f518cea3dd0a2e9ab0 692aacb563bf210f491956ba2a3a0a830a68747f Tuong Nguyen <tuongnguyendev@gmail.com> 1596591592 +0700	commit: complete version 2 add new feature CRUD template
+692aacb563bf210f491956ba2a3a0a830a68747f 25736732a6f90fbadb505e670049d91af6028bc6 Tuong Nguyen <tuongnguyendev@gmail.com> 1596591623 +0700	pull: Merge made by the 'recursive' strategy.
+25736732a6f90fbadb505e670049d91af6028bc6 988b722361666812ae930695e027208dc1e7ed85 Tuong Nguyen <tuongnguyendev@gmail.com> 1596593077 +0700	commit: add update DB
