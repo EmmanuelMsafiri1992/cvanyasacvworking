@@ -23,15 +23,23 @@
     19 => 'Illuminate\\Translation\\TranslationServiceProvider',
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
-    22 => 'Laravel\\Socialite\\SocialiteServiceProvider',
-    23 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    24 => 'Carbon\\Laravel\\ServiceProvider',
-    25 => 'Termwind\\Laravel\\TermwindServiceProvider',
-    26 => 'App\\Providers\\AppServiceProvider',
-    27 => 'App\\Providers\\AuthServiceProvider',
-    28 => 'App\\Providers\\EventServiceProvider',
-    29 => 'App\\Providers\\RouteServiceProvider',
-    30 => 'App\\Providers\\ViewServiceProvider',
+    22 => 'Akaunting\\Setting\\Provider',
+    23 => 'anlutro\\LaravelSettings\\ServiceProvider',
+    24 => 'Inertia\\ServiceProvider',
+    25 => 'Laravel\\Breeze\\BreezeServiceProvider',
+    26 => 'Laravel\\Sanctum\\SanctumServiceProvider',
+    27 => 'Laravel\\Socialite\\SocialiteServiceProvider',
+    28 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    29 => 'Carbon\\Laravel\\ServiceProvider',
+    30 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    31 => 'Termwind\\Laravel\\TermwindServiceProvider',
+    32 => 'Pest\\Laravel\\PestServiceProvider',
+    33 => 'Tighten\\Ziggy\\ZiggyServiceProvider',
+    34 => 'App\\Providers\\AppServiceProvider',
+    35 => 'App\\Providers\\AuthServiceProvider',
+    36 => 'App\\Providers\\EventServiceProvider',
+    37 => 'App\\Providers\\RouteServiceProvider',
+    38 => 'App\\Providers\\ViewServiceProvider',
   ),
   'eager' => 
   array (
@@ -45,13 +53,19 @@
     7 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
-    10 => 'Carbon\\Laravel\\ServiceProvider',
-    11 => 'Termwind\\Laravel\\TermwindServiceProvider',
-    12 => 'App\\Providers\\AppServiceProvider',
-    13 => 'App\\Providers\\AuthServiceProvider',
-    14 => 'App\\Providers\\EventServiceProvider',
-    15 => 'App\\Providers\\RouteServiceProvider',
-    16 => 'App\\Providers\\ViewServiceProvider',
+    10 => 'Akaunting\\Setting\\Provider',
+    11 => 'Inertia\\ServiceProvider',
+    12 => 'Laravel\\Sanctum\\SanctumServiceProvider',
+    13 => 'Carbon\\Laravel\\ServiceProvider',
+    14 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    15 => 'Termwind\\Laravel\\TermwindServiceProvider',
+    16 => 'Pest\\Laravel\\PestServiceProvider',
+    17 => 'Tighten\\Ziggy\\ZiggyServiceProvider',
+    18 => 'App\\Providers\\AppServiceProvider',
+    19 => 'App\\Providers\\AuthServiceProvider',
+    20 => 'App\\Providers\\EventServiceProvider',
+    21 => 'App\\Providers\\RouteServiceProvider',
+    22 => 'App\\Providers\\ViewServiceProvider',
   ),
   'deferred' => 
   array (
@@ -203,6 +217,10 @@
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'Illuminate\\Contracts\\Validation\\UncompromisedVerifier' => 'Illuminate\\Validation\\ValidationServiceProvider',
+    'anlutro\\LaravelSettings\\SettingsManager' => 'anlutro\\LaravelSettings\\ServiceProvider',
+    'anlutro\\LaravelSettings\\SettingStore' => 'anlutro\\LaravelSettings\\ServiceProvider',
+    'setting' => 'anlutro\\LaravelSettings\\ServiceProvider',
+    'Laravel\\Breeze\\Console\\InstallCommand' => 'Laravel\\Breeze\\BreezeServiceProvider',
     'Laravel\\Socialite\\Contracts\\Factory' => 'Laravel\\Socialite\\SocialiteServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
   ),
@@ -242,6 +260,12 @@
     array (
     ),
     'Illuminate\\Validation\\ValidationServiceProvider' => 
+    array (
+    ),
+    'anlutro\\LaravelSettings\\ServiceProvider' => 
+    array (
+    ),
+    'Laravel\\Breeze\\BreezeServiceProvider' => 
     array (
     ),
     'Laravel\\Socialite\\SocialiteServiceProvider' => 

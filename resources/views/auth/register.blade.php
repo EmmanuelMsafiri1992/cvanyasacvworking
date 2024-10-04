@@ -1,74 +1,89 @@
-@extends('layouts.app')
+@extends('layouts.auth')
+
+@if(config('recaptcha.api_site_key') && config('recaptcha.api_secret_key'))
+    @push('head')
+        {!! htmlScriptTagJsApi() !!}
+    @endpush
+@endif
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+    <div class="row">
+        <div class="col col-login mx-auto">
+            <div class="text-center mb-6">
+                <img src="{{ asset('img/logo.png') }}" class="h-8" alt="">
+            </div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+            <form class="card" action="{{ route('register') }}" method="post">
+                @csrf
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                <div class="card-body p-6">
+                    <div class="card-title">@lang('Create new account')</div>
+                    <div class="form-group">
+                        <label for="name" class="form-label">@lang('Name')</label>
+                        <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" placeholder="@lang('Enter name')" required autofocus>
+                        @if ($errors->has('name'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('name') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">@lang('Email address')</label>
+                        <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="@lang('Enter email')" required>
+                        @if ($errors->has('email'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">@lang('Password')</label>
+                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="@lang('Password')" required>
+                        @if ($errors->has('password'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    <div class="form-group">
+                        <label for="password_confirmation" class="form-label">@lang('Confirm password')</label>
+                        <input id="password_confirmation" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password_confirmation" placeholder="@lang('Confirm password')" required>
+                    </div>
+                    @if(config('recaptcha.api_site_key') && config('recaptcha.api_secret_key'))
+                    <div class="form-group">
+                        {!! htmlFormSnippet() !!}
+                        @if ($errors->has('g-recaptcha-response'))
+                            <div class="text-red mt-1">
+                                <small><strong>{{ $errors->first('g-recaptcha-response') }}</strong></small>
                             </div>
+                        @endif
+                    </div>
+                    @endif
+                    <div class="form-footer">
+                        <button type="submit" class="btn btn-primary btn-block">@lang('Create new account')</button>
+                    </div>
+                    @if(config('services.facebook.client_id') && config('services.facebook.client_secret'))
+                    <div class="form-footer">
+                        <a href="{{ route('login.social', 'facebook') }}" class="btn btn-block btn-facebook"><i class="fe fe-facebook"></i> @lang('Login with Facebook')</a>
+                    </div>
+                    @endif
+                </div>
+            </form>
+            <div class="text-center text-muted">
+                @lang('Already have account?') <a href="{{ route('login') }}">@lang('Sign in')</a>
+
+                <div class="mt-5">
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ $active_language['native'] }}
+                        </button>
+                        <div class="dropdown-menu">
+                            @foreach($languages as $code => $language)
+                                <a href="{{ route('localize', $code) }}" rel="alternate" hreflang="{{ $code }}" class="dropdown-item">{{ $language['native'] }}</a>
+                            @endforeach
                         </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

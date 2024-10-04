@@ -17,10 +17,10 @@ mix.styles(
     "node_modules/tabler-ui/dist/assets/css/dashboard.css",
     "node_modules/tabler-ui/dist/assets/plugins/charts-c3/plugin.css",
     "node_modules/flatpickr/dist/flatpickr.css",
-    "resume_assets/builder.min.css",
-    "css/customize.css",
+    "public/resume_public/assets/builder.min.css",
+    "public/css/customize.css",
   ],
-  "css/app.bundle.css"
+  "public/css/app.bundle.css"
 );
 
 mix.scripts(
@@ -32,10 +32,10 @@ mix.scripts(
     "node_modules/flatpickr/dist/l10n/ru.js",
     "node_modules/flatpickr/dist/l10n/pt.js",
     "node_modules/flatpickr/dist/l10n/tr.js",
-    "resume_assets/builder.min.js",
-    "resume_assets/sweetalert.js",
+    "public/resume_public/assets/builder.min.js",
+    "public/resume_public/assets/sweetalert.js",
   ],
-  "js/app.bundle.js"
+  "public/js/app.bundle.js"
 );
 
-mix.copyDirectory("node_modules/tabler-ui/dist/assets/fonts", "fonts");
+mix.copyDirectory("node_modules/tabler-ui/dist/assets/fonts", "public/fonts");

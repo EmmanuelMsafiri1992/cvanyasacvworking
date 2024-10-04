@@ -17,6 +17,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}" />
     <title>@yield('title', config('app.name'))</title>
     <link rel="stylesheet" href="{{ asset('css/app.bundle.css') }}?v={{ config('rb.version') }}">
+   
+
     
     @stack('head')
 </head>

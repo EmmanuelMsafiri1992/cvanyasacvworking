@@ -1,11 +1,10 @@
-@extends('layouts.auth')
-
+<!-- @extends('layouts.auth') -->
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col col-login mx-auto">
             <div class="text-center mb-6">
-                <img src="{{ asset('img/logo.png') }}" class="h-8" alt="">
+                <!-- <img src="{{ asset('img/logo.png') }}" class="h-8" alt=""> -->
             </div>
             <form class="card" action="{{ route('login') }}" method="post">
                 @csrf
